@@ -41,7 +41,7 @@
   <OutlineHeader color="pink">follow me!</OutlineHeader>
   <div class="socials">
     {#each socials as { href, icon, title }}
-      <a {href} target="_blank" aria-label={title}>
+      <a {href} target="_blank" rel="noreferrer" aria-label={title}>
         <Icon src={icon} {title} />
       </a>
     {/each}

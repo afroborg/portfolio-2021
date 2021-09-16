@@ -8,7 +8,7 @@
 
     <div class="lists">
       <div class="list">
-        <h4>Development</h4>
+        <h3>Development</h3>
         <ul>
           <li>Javascript</li>
           <li>Typescript</li>
@@ -18,7 +18,7 @@
       </div>
 
       <div class="list">
-        <h4>Frameworks</h4>
+        <h3>Frameworks</h3>
         <ul>
           <li>React.js</li>
           <li>Vue.js</li>
@@ -28,7 +28,7 @@
       </div>
 
       <div class="list">
-        <h4>Tools</h4>
+        <h3>Tools</h3>
         <ul>
           <li>Photoshop</li>
           <li>Illustrator</li>
@@ -38,7 +38,7 @@
     </div>
 
     <div class="not-listed">
-      <h3>Your language not listed?</h3>
+      <h4>Your language not listed?</h4>
       <p>I'm always looking to learn new skills!</p>
     </div>
   </div>
@@ -72,7 +72,7 @@
       }
     }
 
-    h4 {
+    h3 {
       margin-bottom: sizes.margin(2);
       font-size: 1.1em;
     }
@@ -83,6 +83,9 @@
     text-align: right;
     color: colors.$pink-dark;
 
+    h4 {
+      font-size: 1.2em;
+    }
     p {
       margin-top: sizes.$margin;
     }

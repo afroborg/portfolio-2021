@@ -19,7 +19,13 @@
   };
 </script>
 
-<a href="/" class="logo" class:inverted={isInverted} on:click={handleClick}>
+<a
+  href="/"
+  class="logo"
+  class:inverted={isInverted}
+  on:click={handleClick}
+  aria-label="Back home"
+>
   <span>
     <Logo />
   </span>

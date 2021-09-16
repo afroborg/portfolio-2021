@@ -33,8 +33,10 @@
       <a
         {href}
         target="_blank"
+        rel="noreferrer"
         class="section"
         style={`--delay: ${100 * i + 1}ms`}
+        aria-label={title}
       >
         <Icon src={icon} {title} />
         <span>{title}</span>
