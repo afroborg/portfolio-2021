@@ -1,5 +1,5 @@
 <script lang="ts">
-  import FiMail from 'svelte-icons-pack/fi/FiMail.js';
+  import FiMail from 'svelte-icons-pack/fi/FiMail';
   import Icon from 'svelte-icons-pack/Icon.svelte';
 
   let isCopied = false;

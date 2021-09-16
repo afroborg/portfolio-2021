@@ -1,6 +1,6 @@
-import FiGithub from 'svelte-icons-pack/fi/FiGithub.js';
+import FiGithub from 'svelte-icons-pack/fi/FiGithub';
 import FiGitlab from 'svelte-icons-pack/fi/FiGitlab';
-import FiLinkedIn from 'svelte-icons-pack/fi/FiLinkedIn.js';
+import FiLinkedIn from 'svelte-icons-pack/fi/FiLinkedIn';
 
 export const socials = [
   {
