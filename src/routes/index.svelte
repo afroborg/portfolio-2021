@@ -49,10 +49,6 @@
     }
   }
 
-  .typewriter {
-    width: fit-content;
-  }
-
   h1 {
     color: colors.$light;
     font-size: 5em;
