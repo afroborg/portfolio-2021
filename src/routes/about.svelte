@@ -12,7 +12,7 @@
   $: yearsOld = now - 2000;
 </script>
 
-<main>
+<main class="max-width">
   <div class="me-wrapper">
     <div class="me-container">
       <div class="me-img">
@@ -74,6 +74,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 500px;
   }
 
   .me-wrapper {

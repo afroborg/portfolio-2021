@@ -47,6 +47,10 @@
     grid-template-rows: minmax(0, 4fr) minmax(0, 1fr) minmax(0, 1.5fr);
     cursor: pointer;
 
+    @media screen and (min-width: 1100px) {
+      grid-template-rows: minmax(0, 4fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+
     @for $i from 1 through 4 {
       &:nth-child(#{$i}) {
         grid-area: card-#{$i};

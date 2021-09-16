@@ -32,7 +32,7 @@
   ];
 </script>
 
-<div class="projects">
+<div class="projects  max-width">
   <OutlineHeader opacity=".75">projects</OutlineHeader>
 
   <div class="projects-container">
@@ -65,6 +65,12 @@
       'card-3 card-4'
       '. card-4';
     gap: sizes.padding(2);
+
+    @media screen and (min-width: 750px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-rows: 1fr;
+      grid-template-areas: 'card-1 card-2 card-3 card-4';
+    }
   }
 
   .see-all-container {

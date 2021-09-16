@@ -3,42 +3,44 @@
 </script>
 
 <div class="container">
-  <OutlineHeader color="pink">skills</OutlineHeader>
+  <div class="inner-container max-width">
+    <OutlineHeader color="pink">skills</OutlineHeader>
 
-  <div class="lists">
-    <div class="list">
-      <h4>Development</h4>
-      <ul>
-        <li>Javascript</li>
-        <li>Typescript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
+    <div class="lists">
+      <div class="list">
+        <h4>Development</h4>
+        <ul>
+          <li>Javascript</li>
+          <li>Typescript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <h4>Frameworks</h4>
+        <ul>
+          <li>React.js</li>
+          <li>Vue.js</li>
+          <li>Svelte</li>
+          <li>.NET Core</li>
+        </ul>
+      </div>
+
+      <div class="list">
+        <h4>Tools</h4>
+        <ul>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>Figma</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="list">
-      <h4>Frameworks</h4>
-      <ul>
-        <li>React.js</li>
-        <li>Vue.js</li>
-        <li>Svelte</li>
-        <li>.NET Core</li>
-      </ul>
+    <div class="not-listed">
+      <h3>Your language not listed?</h3>
+      <p>I'm always looking to learn new skills!</p>
     </div>
-
-    <div class="list">
-      <h4>Tools</h4>
-      <ul>
-        <li>Photoshop</li>
-        <li>Illustrator</li>
-        <li>Figma</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="not-listed">
-    <h3>Your language not listed?</h3>
-    <p>I'm always looking to learn new skills!</p>
   </div>
 </div>
 
@@ -47,6 +49,9 @@
   @use '../../styles/sizes';
   .container {
     background: colors.$pink-light;
+  }
+
+  .inner-container {
     padding: sizes.padding(3) sizes.$padding-horizontal-mobile sizes.padding(4);
   }
 

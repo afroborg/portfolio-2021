@@ -64,13 +64,17 @@
     background: colors.$pink-light;
     height: 100vh;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     transition: transform transition.$duration;
     z-index: zindex.$overlay;
 
     &.is-open {
       --transform: 0%;
+    }
+
+    @media screen and (min-width: 750px) {
+      width: 400px;
     }
   }
 

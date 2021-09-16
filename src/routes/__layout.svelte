@@ -8,7 +8,7 @@
 
 <Header />
 
-<main class="content max-width">
+<main class="content">
   <slot />
 </main>
 

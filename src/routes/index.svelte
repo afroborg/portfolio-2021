@@ -8,7 +8,7 @@
 </script>
 
 <div class="homepage">
-  <div class="hero-section">
+  <div class="hero-section max-width">
     <h1>
       Hell<span class="filled-o" />!
     </h1>
@@ -78,5 +78,6 @@
 
   .mail-me-container {
     margin-top: sizes.margin(4);
+    width: min(100%, 500px);
   }
 </style>
