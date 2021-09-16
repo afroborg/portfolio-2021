@@ -11,7 +11,7 @@
   const wheel = (node: HTMLElement, options: { scrollable: boolean }) => {
     let { scrollable } = options;
 
-    const handler = (e: Event) => {
+    const handler = (e: WheelEvent) => {
       if (!scrollable) e.preventDefault();
     };
 

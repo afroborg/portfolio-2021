@@ -32,7 +32,7 @@
   </div>
   <div class="details">
     <span class="title">{title}</span>
-    <span><Icon src={FiArrowRight} size="1.2em" /></span>
+    <span class="arrow"><Icon src={FiArrowRight} size="1.2em" /></span>
   </div>
 </a>
 
@@ -55,6 +55,10 @@
       &:nth-child(#{$i}) {
         grid-area: card-#{$i};
       }
+    }
+
+    &:hover .arrow {
+      transform: translateX(5px);
     }
   }
 
@@ -98,5 +102,9 @@
       color: colors.$pink-light;
       font-size: 1.4em;
     }
+  }
+
+  .arrow {
+    transition: transform 200ms;
   }
 </style>
