@@ -1,0 +1,14 @@
+$navbar-height: 80px;
+$padding-horizontal-desktop: 82px;
+$padding-horizontal-mobile: 32px;
+
+$padding: 0.5rem;
+
+$margin: 0.5rem;
+
+@function padding($multiple) {
+  @return $padding * $multiple;
+}
+@function margin($multiple) {
+  @return $margin * $multiple;
+}
