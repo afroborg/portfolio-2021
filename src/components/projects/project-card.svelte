@@ -46,6 +46,7 @@
     display: grid;
     box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.15);
     grid-template-rows: minmax(0, 4fr) minmax(0, 1fr) minmax(0, 1.5fr);
+    max-height: 500px;
     cursor: pointer;
     transition: transform transition.$duration;
 
@@ -73,6 +74,7 @@
 
     img {
       height: 100%;
+      width: 100%;
       object-fit: cover;
       z-index: 0;
     }
