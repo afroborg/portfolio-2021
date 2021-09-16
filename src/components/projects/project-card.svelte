@@ -40,12 +40,14 @@
   @use '../../styles/colors';
   @use '../../styles/sizes';
   @use '../../styles/typography';
+  @use '../../styles/transition';
 
   .card {
     display: grid;
     box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.15);
     grid-template-rows: minmax(0, 4fr) minmax(0, 1fr) minmax(0, 1.5fr);
     cursor: pointer;
+    transition: transform transition.$duration;
 
     @media screen and (min-width: 1100px) {
       grid-template-rows: minmax(0, 4fr) minmax(0, 1fr) minmax(0, 1fr);
@@ -57,8 +59,12 @@
       }
     }
 
-    &:hover .arrow {
-      transform: translateX(5px);
+    &:hover {
+      transform: rotate(-1deg);
+
+      .arrow {
+        transform: translateX(5px);
+      }
     }
   }
 
@@ -78,6 +84,10 @@
     gap: sizes.$margin;
     align-items: center;
     padding-inline: sizes.padding(2);
+
+    @media screen and (min-width: 800px) {
+      font-size: 1.25em;
+    }
 
     span {
       display: grid;
@@ -105,6 +115,6 @@
   }
 
   .arrow {
-    transition: transform 200ms;
+    transition: transform transition.$duration;
   }
 </style>

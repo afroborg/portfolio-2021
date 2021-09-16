@@ -29,8 +29,13 @@
   <OutlineHeader opacity=".6">about me</OutlineHeader>
 
   <div class="info-box">
-    {#each socials as { title, icon, href }}
-      <a {href} target="_blank" class="section">
+    {#each socials as { title, icon, href }, i}
+      <a
+        {href}
+        target="_blank"
+        class="section"
+        style={`--delay: ${100 * i + 1}ms`}
+      >
         <Icon src={icon} {title} />
         <span>{title}</span>
       </a>
@@ -68,6 +73,7 @@
   @use '../styles/sizes';
   @use '../styles/colors';
   @use '../styles/typography';
+  @use '../styles/transition';
 
   main {
     padding: sizes.padding(4) sizes.$padding-horizontal-mobile;
@@ -117,10 +123,12 @@
     gap: sizes.padding(2);
 
     .section {
+      --delay: 100ms;
       background: colors.$pink-light;
       padding: sizes.padding(2) sizes.padding(4);
       display: flex;
       align-items: center;
+      animation: pop transition.$duration var(--delay) backwards;
 
       :global(svg) {
         vertical-align: middle;
@@ -148,6 +156,7 @@
 
   .text-container {
     margin-top: sizes.padding(4);
+    animation: slideInUp transition.$duration transition.$duration * 2 backwards;
 
     p {
       margin-top: sizes.padding(2);

@@ -72,7 +72,7 @@
     cursor: pointer;
 
     &:hover .copy-overlay {
-      transform: scaleY(1);
+      transform: scale(1);
     }
   }
 
@@ -88,7 +88,8 @@
     height: 100%;
     overflow: hidden;
     transition: all transition.$duration;
-    transform: scaleY(0);
-    transform-origin: bottom;
+    transform: scale(0);
+    transform-origin: center;
+    text-align: center;
   }
 </style>

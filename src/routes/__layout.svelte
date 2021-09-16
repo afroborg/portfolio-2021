@@ -16,7 +16,6 @@
 
 <style type="scss" global>
   @use '../styles/sizes';
-  @import '../styles/base';
 
   .content {
     min-height: 100vh;

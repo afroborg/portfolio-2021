@@ -35,6 +35,7 @@
   @use '../styles/colors';
   @use '../styles/sizes';
   @use '../styles/typography';
+  @use '../styles/transition';
 
   .homepage {
     margin-top: sizes.padding(8);
@@ -42,11 +43,20 @@
 
   .hero-section {
     padding: 0 sizes.$padding-horizontal-mobile;
+
+    @media screen and (min-width: 1000px) {
+      font-size: 1.25em;
+    }
+  }
+
+  .typewriter {
+    width: fit-content;
   }
 
   h1 {
     color: colors.$light;
     font-size: 5em;
+    animation: slideInUp transition.$duration transition.$duration backwards;
 
     .filled-o {
       display: inline-block;
@@ -63,10 +73,18 @@
     font-size: 2.6em;
     font-weight: typography.$regular;
     margin-top: sizes.$margin;
+    animation: slideInUp transition.$duration transition.$duration * 1.5
+      backwards;
 
     span {
       @include typography.outline(colors.$light);
       color: colors.$blue-primary;
+      transition: all transition.$duration;
+
+      &:hover {
+        color: colors.$pink-light;
+        text-shadow: none;
+      }
     }
   }
 
@@ -74,10 +92,13 @@
     margin-top: sizes.$margin;
     display: flex;
     gap: sizes.$margin;
+    animation: slideInUp transition.$duration transition.$duration * 2 backwards;
   }
 
   .mail-me-container {
     margin-top: sizes.margin(4);
     width: min(100%, 500px);
+    animation: slideInUp transition.$duration transition.$duration * 2.5
+      backwards;
   }
 </style>

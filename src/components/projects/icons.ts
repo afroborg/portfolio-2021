@@ -15,7 +15,7 @@ export const iconMap: Record<string, any> = {
   vue: FaVue,
   sass: FaSass,
   typescript: SiTypescript,
-  javascript: SiJavascript,
   go: SiGo,
   node: FaNodejs,
+  javascript: SiJavascript,
 };

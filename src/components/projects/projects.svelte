@@ -70,6 +70,7 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
       grid-template-rows: 1fr;
       grid-template-areas: 'card-1 card-2 card-3 card-4';
+      gap: sizes.padding(6);
     }
   }
 
@@ -82,6 +83,10 @@
 
     :global(svg) {
       vertical-align: bottom;
+    }
+
+    @media screen and (min-width: 750px) {
+      font-size: 1.25em;
     }
   }
 </style>
