@@ -32,7 +32,7 @@
 
 <svelte:window use:wheel={{ scrollable: !$isOpen }} />
 
-<header class="container" class:is-open={$isOpen}>
+<header class="container max-width" class:is-open={$isOpen}>
   <div class="logo-container">
     <LogoBtn isInverted={$isOpen} />
   </div>
