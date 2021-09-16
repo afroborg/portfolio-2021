@@ -24,10 +24,10 @@
       slug: 'cdon',
     },
     {
-      title: 'e-sektionen',
+      title: 'e-sek',
       image: '',
       languages: ['typescript', 'react', 'node', 'sass', 'go'],
-      slug: 'esek',
+      slug: 'e-sek',
     },
   ];
 </script>
@@ -37,7 +37,7 @@
 
   <div class="projects-container">
     {#each projects as project}
-      <ProjectCard {...project} />
+      <ProjectCard {...project} image={`/assets/${project.slug}.png`} />
     {/each}
   </div>
 
