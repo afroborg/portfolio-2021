@@ -70,7 +70,7 @@
 
   .image {
     position: relative;
-    aspect-ratio: 1 / 1;
+
     img {
       height: 100%;
       object-fit: cover;
