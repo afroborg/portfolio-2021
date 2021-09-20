@@ -53,6 +53,10 @@
     &:hover {
       --skew: 0;
     }
+
+    @media screen and (max-width: 800px) {
+      --skew: 0;
+    }
   }
 
   .project-image {
