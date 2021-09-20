@@ -17,7 +17,7 @@
   }
 </script>
 
-<div class="project">
+<a href={`/projects/${slug}`} class="project">
   <div class="project-image">
     <img src={imageUrl} alt={title} />
 
@@ -36,12 +36,24 @@
     <h3>{title}</h3>
     <span class="arrow"><Icon src={FiArrowRight} size="1.5em" /></span>
   </div>
-</div>
+</a>
 
 <style lang="scss">
   @use '../../styles/sizes';
   @use '../../styles/colors';
   @use '../../styles/typography';
+  @use '../../styles/transition';
+
+  .project {
+    --skew: -2deg;
+    transform: skew(var(--skew));
+    transition: transform transition.$duration;
+    box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.15);
+
+    &:hover {
+      --skew: 0;
+    }
+  }
 
   .project-image {
     position: relative;
