@@ -1,38 +1,12 @@
 <script lang="ts">
   import OutlineHeader from '@/components/outline-header.svelte';
+  import { projects } from '@/constants';
   import Icon from 'svelte-icons-pack';
   import FiArrowRight from 'svelte-icons-pack/fi/FiArrowRight';
   import ProjectCard from './project-card.svelte';
-
-  const projects = [
-    {
-      title: 'inter ikea',
-      image: '',
-      languages: ['javascript', 'svelte', 'less'],
-      slug: 'ikea',
-    },
-    {
-      title: 'e.on',
-      image: '',
-      languages: ['typescript', 'react', 'go'],
-      slug: 'eon',
-    },
-    {
-      title: 'cdon.com',
-      image: '',
-      languages: ['typescript', 'vue', 'sass'],
-      slug: 'cdon',
-    },
-    {
-      title: 'e-sek',
-      image: '',
-      languages: ['typescript', 'react', 'node', 'sass', 'go'],
-      slug: 'e-sek',
-    },
-  ];
 </script>
 
-<div class="projects  max-width">
+<div class="projects max-width">
   <OutlineHeader opacity=".75">projects</OutlineHeader>
 
   <div class="projects-container">

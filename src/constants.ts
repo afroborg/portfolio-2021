@@ -19,3 +19,30 @@ export const socials = [
     href: 'https://www.linkedin.com/in/axelfroborg',
   },
 ];
+
+export const projects = [
+  {
+    title: 'inter ikea',
+    image: '',
+    languages: ['javascript', 'svelte', 'react', 'less'],
+    slug: 'ikea',
+  },
+  {
+    title: 'e.on',
+    image: '',
+    languages: ['typescript', 'react', 'go'],
+    slug: 'eon',
+  },
+  {
+    title: 'cdon.com',
+    image: '',
+    languages: ['typescript', 'vue', 'sass'],
+    slug: 'cdon',
+  },
+  {
+    title: 'e-sek',
+    image: '',
+    languages: ['typescript', 'react', 'node', 'sass', 'go'],
+    slug: 'e-sek',
+  },
+];
